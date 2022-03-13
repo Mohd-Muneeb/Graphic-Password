@@ -1,0 +1,148 @@
+.select {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 500px;
+  max-height: 500px;
+  gap: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-left: 38%;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  
+}
+
+.select__item {
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+  border-radius: 3px;
+  background: #eeeeee;
+  transition: background 0.1s;
+}
+
+.select__item--selected {
+  background: #009578;
+  color: #ffffff;
+}
+
+#submitBtn {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  max-width: 150px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  margin-left: 47%;
+  font-family: 'Montserrat', sans-serif;
+  /* position: absolute; */
+  /* align-self: center; */
+}
+
+#submitBtn:disabled {
+  pointer-events: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#submitBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#submitBtn:active {
+  box-shadow: none;
+  transform: translateY(0);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro-heading{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+  .footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }

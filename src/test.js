@@ -253,7 +253,7 @@ submit.addEventListener("click", () => {
     if (copyImages.join('') == finalArray.join('')) {
         // console.log("they cool lmao");
         // alert("yeah you got it right");
-        solved();
+        window.location.href = "https://graphic-password.netlify.app/views/dashboard.html";
 
     }
     else {
@@ -279,7 +279,8 @@ submit.addEventListener("click", () => {
 //On solving
 
 function solved() {
-    window.location.href = "https://graphic-password.netlify.app/views/dashboard.html";
+    alert("You got it right")
+    
 }
 
 //On getting password wrong

@@ -279,8 +279,7 @@ submit.addEventListener("click", () => {
 //On solving
 
 function solved() {
-    window.location.href = "https://graphic-password.netlify.app/views/dashboard.html"
-    return ;
+    window.location.href = "https://graphic-password.netlify.app/views/dashboard.html";
 }
 
 //On getting password wrong

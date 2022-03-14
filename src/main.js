@@ -29,7 +29,7 @@ submitBtn.addEventListener("click", function () {
 function parseUsername() {
     if (username !== '') {
         sessionStorage.setItem("Username", username);
-        window.location.href = "http://127.0.0.1:5500/views/username.html";
+        window.location.href = "/views/username.html";
     }
 
     else {

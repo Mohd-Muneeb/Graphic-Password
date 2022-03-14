@@ -252,14 +252,14 @@ submit.addEventListener("click", () => {
     //This works perfectly well for me
     if (copyImages.join('') == finalArray.join('')) {
         // console.log("they cool lmao");
-        alert("yeah you got it right");
+        // alert("yeah you got it right");
         window.location.href = "https://graphic-password.netlify.app/views/dashboard.html";
 
     }
     else {
-        console.log("bruh wrong pass")
-        alert("Get out bro");
-        wrongPassword();
+        // console.log("bruh wrong pass")
+        alert("Wrong Password");
+        // wrongPassword();
     }
 
 }
@@ -278,17 +278,17 @@ submit.addEventListener("click", () => {
 
 //On solving
 
-function solved() {
-    alert("You got it right")
+// function solved() {
+//     alert("You got it right")
     
-}
+// }
 
 //On getting password wrong
 
-function wrongPassword() {
-    // sessionStorage.clear();
-    // window.location.href = "/views/index.html"
-}
+// function wrongPassword() {
+//     // sessionStorage.clear();
+//     // window.location.href = "/views/index.html"
+// }
 
 // function encrypter(titleText){
 

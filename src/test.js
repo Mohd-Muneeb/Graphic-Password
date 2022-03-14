@@ -252,7 +252,7 @@ submit.addEventListener("click", () => {
     //This works perfectly well for me
     if (copyImages.join('') == finalArray.join('')) {
         // console.log("they cool lmao");
-        // alert("yeah you got it right");
+        alert("yeah you got it right");
         window.location.href = "https://graphic-password.netlify.app/views/dashboard.html";
 
     }

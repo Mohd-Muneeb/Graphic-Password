@@ -122,12 +122,10 @@ function display() {
     for (i = 0; i <= imagesTitle.length - 1; i++) {
         var passwordChoices = document.createElement('option');
 
-        //EDIT THIS TO DISPLAY THEM IMAGES MUNEEB , For Fucks Sake
+        //EDIT THIS TO DISPLAY THEM IMAGES MUNEEB
 
         passwordChoices.innerHTML = imagesTitle[i];
 
-        // passwordChoices.innerHTML = <img src="test-images/image2.jpg"></img>;
-        // console.log(images[i]);
         document.getElementById("option-holder").appendChild(passwordChoices)
 
         //Setting properties
@@ -169,11 +167,9 @@ class CustomSelect {
             const itemElement = document.createElement("div");
 
             itemElement.classList.add("select__item");
-            // itemElement.setAttribute("id", convertableOptions[i].innerHTML);
-            // console.log(formItems[0].children);
             itemElement.textContent = convertableOptions[i].textContent;
 
-            //You added the image Here boy
+            //Adding images here
 
             itemElement.innerHTML = `<img src = "/components/test-images/${userDetail}/${images[i]}" style = "max-height: 200px; max-width: 200px;">`
             this.customSelect.appendChild(itemElement);
@@ -212,7 +208,7 @@ class CustomSelect {
 
         if (finalArray.length <= copyImages.length - 1) {
 
-            //I am pushing shit from here Bro
+            //I am pushing images from here Bro
 
             finalArray.push(imagesTitle[index]);
             console.log(finalArray);
@@ -229,7 +225,6 @@ class CustomSelect {
 
         this.originalSelect.querySelectorAll("option")[index].selected = false;
         itemElement.classList.remove("select__item--selected");
-        //Delete here if you fuck up
         finalArray.splice(finalArray.indexOf(itemElement.id), 1);
 
     }
@@ -238,12 +233,10 @@ class CustomSelect {
 //This is to make those elements
 
 const formItems = document.querySelectorAll(".custom-select")
-// console.log(formItems);
 
 for (i = 0; i <= imagesTitle.length - 1; i++) {
     new CustomSelect(formItems[i]);
 }
-// console.log(copyImages);
 
 const submit = document.getElementById('submitBtn');
 
@@ -251,8 +244,6 @@ submit.addEventListener("click", () => {
 
     //This works perfectly well for me
     if (copyImages.join('') == finalArray.join('')) {
-        // console.log("they cool lmao");
-        // alert("yeah you got it right");
         window.location.href = "https://graphic-password.netlify.app/views/dashboard.html";
 
     }
@@ -265,32 +256,3 @@ submit.addEventListener("click", () => {
 }
 
 );
-
-//Deselect of a element
-
-// let selectedItem = document.getElementsByClassName("selected");
-// selectedItem.addEventListener("click", deselect())
-
-// function deselect() {
-//         // this.setAttribute
-//         console.log("clicked on selected items")
-// }
-
-//On solving
-
-// function solved() {
-//     alert("You got it right")
-    
-// }
-
-//On getting password wrong
-
-// function wrongPassword() {
-//     // sessionStorage.clear();
-//     // window.location.href = "/views/index.html"
-// }
-
-// function encrypter(titleText){
-
-// }
-
